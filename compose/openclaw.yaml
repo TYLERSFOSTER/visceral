@@ -1,0 +1,19 @@
+services:
+  openclaw:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw
+    restart: unless-stopped
+
+    ports:
+      - "18789:18789"
+
+    volumes:
+      - ../data/openclaw:/var/lib/openclaw
+      - ../data/runs:/runs
+
+    environment:
+      - NODE_ENV=production
+
+    # IMPORTANT: don't use "command: gateway ..." (that becomes /app/gateway)
+    # Run the CLI the way the image expects.
+    command: ["node", "openclaw.mjs", "gateway", "--port", "18789", "--verbose", "--allow-unconfigured"]

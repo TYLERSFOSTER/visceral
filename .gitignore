@@ -1,0 +1,15 @@
+# runtime state
+data/
+secrets/
+tmp/
+
+# if you ever vendor openclaw source here
+openclaw/
+
+# common cruft
+**/.cache/
+**/__pycache__/
+**/*.pyc
+node_modules/
+dist/
+.DS_Store
