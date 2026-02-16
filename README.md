@@ -1,10 +1,11 @@
 
 <p align="center">
-    <picture>
-        <source  srcset="/home/foster/visceral/assets/base_isonography/VISCERAL_LOGO.png">
-        <img src="/home/foster/visceral/assets/base_isonography/VISCERAL_LOGO.png" alt="Visceral">
-    </picture>
+  <picture>
+    <source srcset="assets/base_isonography/VISCERAL_LOGO.png">
+    <img src="assets/base_isonography/VISCERAL_LOGO.png" alt="Visceral">
+  </picture>
 </p>
+
 <h1 align="center"><em>
 ＲＥＡＬＩＴＹ&nbsp;&nbsp;ＩＳ&nbsp;&nbsp;ＯＵＲ&nbsp;&nbsp;ＳＵＲＦＡＣＥ.
 </em></h1>
