@@ -16,4 +16,4 @@ services:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN}
 
-    command: ["node","openclaw.mjs","gateway","run","--port","18789","--verbose"]
+    command: ["node","openclaw.mjs","gateway","run","--bind","lan","--port","18789","--verbose","--allow-unconfigured"]
