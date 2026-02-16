@@ -14,13 +14,4 @@
 ---
 ---
 [...]
-sdfsdf
----
----
 
-<p align="center">
-    <picture>
-        <source  srcset="assets/base_isonography/visceral_object_constant_cycle.gif">
-        <img src="/assets/base_isonography/visceral_object_constant_cycle.gif" alt="Visceral">
-    </picture>
-</p>
