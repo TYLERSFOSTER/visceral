@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source srcset="assets/base_isonography/VISCERAL_LOGO.png">
-    <img src="assets/base_isonography/VISCERAL_LOGO.png" alt="Visceral">
+    <source srcset="assets/base_isonography/VISCERAL_GIANT_STITCH.jpg">
+    <img src="assets/base_isonography/VISCERAL_GIANT_STITCH.jpg" alt="Visceral">
   </picture>
 </p>
 
