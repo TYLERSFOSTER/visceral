@@ -4,16 +4,16 @@ services:
     container_name: openclaw
     restart: unless-stopped
 
-    ports:
-      - "18789:18789"
+    network_mode: host
 
     volumes:
+      - ../data/openclaw_home:/home/node/.openclaw   # <-- REQUIRED (persist config)
       - ../data/openclaw:/var/lib/openclaw
       - ../data/runs:/runs
 
     environment:
       - NODE_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN}
 
-    # IMPORTANT: don't use "command: gateway ..." (that becomes /app/gateway)
-    # Run the CLI the way the image expects.
-    command: ["node", "openclaw.mjs", "gateway", "--port", "18789", "--verbose", "--allow-unconfigured"]
+    command: ["node","openclaw.mjs","gateway","run","--port","18789","--verbose"]
