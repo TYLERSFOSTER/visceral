@@ -195,6 +195,30 @@ All use gateways.
 
 ------------------------------------------------------------------------
 
+Part 11: Namespace-Qualified Referent Requirement
+
+All endpoint references must include namespace qualification.
+
+The string:
+
+localhost:18789
+
+is not a valid architectural referent.
+
+A valid referent must include:
+
+(namespace, machine, PID, address, port)
+
+Example:
+
+CLIENT_LOCAL_MAC localhost:18789 → Code Helper PID 58444
+
+SERVER_GCP_VM_HOST localhost:18789 → openclaw-gateway PID XXXX
+
+This eliminates referential ambiguity.
+
+------------------------------------------------------------------------
+
 # Final Mental Model
 
 A gateway is simply:
